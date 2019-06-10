@@ -1,0 +1,73 @@
+@import "./src/vars.scss";
+
+:host {
+    .adventure-container {
+        width: 100%;
+
+        .adventure-header {
+            width: 100%;
+            height: 200px;
+            text-align: -webkit-center;
+
+            .adventure-battle {
+                width: 50%;
+                height: 160px;
+                background-image: linear-gradient(to bottom, (rgba(12, 12, 12, 0), rgba(200, 200, 244, 1)));
+                border: 1px solid #333;
+            }
+        }
+
+        .adventure-left {
+            width: 50%;
+            .adventure-area {
+                display: inline-flex;
+                width: 400px;
+                justify-content: flex-start;
+                padding: 8px;
+                align-items: center;
+                border-radius: 8px;
+                background-image: linear-gradient(to left, (rgba(12, 12, 12, 0), rgba(200, 255, 200, 1)));
+
+                .image {
+                    padding: 16px;
+                    img {
+                        height: 120px;
+                        border-radius: 24px;
+                    }
+                }
+
+                .wrapper {
+                    .title {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+
+                    .level {
+
+                    }
+                }
+            }
+        }
+
+        .adventure-right {
+            width: 50%;
+            text-align: right;
+            .dungeon-area {
+                display: inline-flex;
+                width: 400px;
+                padding: 8px;
+                align-items: center;
+                justify-content: flex-end;
+                border-radius: 8px;
+                background-image: linear-gradient(to right, (rgba(12, 12, 12, 0), rgba(30, 20, 20, 1)));
+                .image {
+                    padding: 16px;
+                    img {
+                        height: 120px;
+                        border-radius: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
