@@ -1,0 +1,45 @@
+@import "./src/vars.scss";
+
+:host {
+  .character-content {
+
+      .character-equipment {
+        width: 50%;
+        .character-info {
+          display: inline-flex;
+          .character-image {
+            padding-right: 16px;
+            .img {
+              width: 200px;
+              border-radius: 24px;
+            }
+          }
+          .character-name {
+            .name {
+
+            }
+            .title {
+
+            }
+            .lvlNclass {
+              .lvl {
+
+              }
+              .class {
+
+              }
+            }
+          }
+        }
+      }
+
+    .character-stats {
+      width: 50%;
+    }
+
+    .character-inventory {
+      width: 100%;
+    }
+
+  }
+}

@@ -1,0 +1,63 @@
+@import "./src/vars.scss";
+
+:host {
+
+  .content-wrapper {
+    padding: 0;
+    margin: 0;
+    background-color: #aab;
+    height: 100vh;
+
+    .header {
+      border-bottom: 1px solid #44a;
+      position: relative;
+      width: 100%;
+      height: 120px;
+      background-color: $primary;
+
+      .user-character {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+        .user-character-name {
+          font-size: 16px;
+          font-weight: bold;
+          margin-right: 16px;
+          color: white;
+        }
+
+        .user-character-portrait {
+          height: 60px;
+          width: 60px;
+          border-radius: 16px;
+        }
+      }
+
+      .nav-bar {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: $primaryDark;
+        display: inline-flex;
+
+        .nav-link {
+          color: #eee;
+          font-size: 14px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .page-wrapper {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,21 @@
+<div class="content-wrapper">
+  <div class="header">
+
+    <div class="user-character" (click)="navigate('character')">
+      <div class="user-character-name">Ryven</div>
+      <img [src]="'http://i67.tinypic.com/312tu7p.jpg'" class="user-character-portrait">
+    </div>
+
+    <div class="nav-bar">
+      <div class="nav-link" (click)="navigate('')">Home</div>
+      <div class="nav-link" (click)="navigate('town')">Town</div>
+      <div class="nav-link" (click)="navigate('adventure')">Adventure</div>
+      <div class="nav-link" (click)="navigate('shop')">Shop</div>
+    </div>
+
+  </div>
+  <div class="page-wrapper">
+    <router-outlet>
+    </router-outlet>
+  </div>
+</div>
