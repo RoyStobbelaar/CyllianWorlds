@@ -1,0 +1,39 @@
+@import "./src/vars.scss";
+
+:host {
+    .home-container {
+
+        .sections {
+            display: inline-flex;
+            width: 100%;;
+
+            .left-section {
+                width: 50%;
+            }
+            .right-section {
+                width: 50%;
+                .quest-section {
+                    .quest-item {
+                        .quest-title {
+                            font-weight: bold;
+                            margin: 8px 0;
+                        }
+                        .quest-desc {
+                            
+                        }
+                    }
+                }
+
+                .nav-section {
+                    .divider {
+                        margin: 16px 0px;
+                        width: 100%;
+                        border-bottom: 1px solid #333;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,3 +1,5 @@
+import { CharacterService } from './services/character.service';
+import { QuestService } from './services/quest.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -24,7 +26,8 @@ import { CharacterComponent } from './screens/character/character.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [QuestService,
+  CharacterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

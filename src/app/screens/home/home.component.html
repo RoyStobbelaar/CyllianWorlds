@@ -1,3 +1,46 @@
-<p>
-  home-component works!
-</p>
+<div class="home-container">
+
+
+  <div class="sections">
+    <div class="left-section">
+      // Recap of selected character here
+
+      <div class="main-character" *ngIf="mainCharacter">
+        <div class="image">
+          <img [src]="mainCharacter.img">
+        </div>
+        <div class="character-stats">
+          <div class="name">{{mainCharacter.name}}</div>
+          <div class="lvlNclass">Level {{mainCharacter.level}} {{mainCharacter.characterClass}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="quests-section">
+        <h3>Current quests</h3>
+        <div class="quest-item" *ngFor="let quest of quests">
+          <div class="quest-title">{{quest.title}}</div>
+          <div class="quest-desc">
+            {{quest.description}} <br>
+            {{quest.target.currentAmount}} / {{quest.target.amount}}
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <h3>Navigation</h3>
+        <div class=nav-item>Raider's Den</div>
+        <div class=nav-item>Untamed Forest</div>
+        <div class=nav-item>Desolate Village</div>
+
+        <div class="divider"></div>
+
+        <div class=nav-item>Blacksmith</div>
+        <div class=nav-item>Shop</div>
+        <div class=nav-item>Adventures Guild</div>
+
+      </div>
+    </div>
+  </div>
+</div>
