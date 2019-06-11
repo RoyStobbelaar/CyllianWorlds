@@ -3,13 +3,13 @@
 :host {
 
   .content-wrapper {
+    color: $fontWhite;
     padding: 0;
     margin: 0;
-    background-color: #aab;
+    background-color: $dark;
     height: 100vh;
 
     .header {
-      border-bottom: 1px solid #44a;
       position: relative;
       width: 100%;
       height: 120px;

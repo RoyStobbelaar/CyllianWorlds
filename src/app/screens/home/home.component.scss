@@ -2,29 +2,53 @@
 
 :host {
     .home-container {
-
+      background-color: $primary;
+      border-radius: 8px;
+      padding: 0 24px;
         .sections {
             display: inline-flex;
             width: 100%;;
 
             .left-section {
                 width: 50%;
+                padding-right: 10%;
 
                 .main-character {
                     display: inline-flex;
-                    width: 300px;
+                    width: 100%;
                     padding: 8px;
                     align-items: center;
                     border-radius: 8px;
-                    background-image: linear-gradient(to left, (rgba(12,12,12,0), rgba(200,200,244,1)));
+                    margin-bottom: 8px;
+                    color: #111;
+                    &.Rogue {
+                      background-image: $gradientRogue;
+                    }
+
+                    &.Knight {
+                      background-image: $gradientKnight;
+                    }
+
+                    &.Priest {
+                      background-image: $gradientPriest;
+                    }
+
+                    &.Mage {
+                      background-image: $gradientMage;
+                    }
+
                     .image {
-                        img {
-                            height: 100px;
-                            border-radius: 8px;
-                            margin-right: 8px;
-                        }
+                      position: relative;
+                      float: left;
+                      width:  100px;
+                      height: 100px;
+                      background-position: 50% 50%;
+                      background-repeat:   no-repeat;
+                      background-size:     cover;
+                      border-radius: 8px;
                     }
                     .character-stats {
+                      padding-left: 16px;
                         .name {
                             font-size: 20px;
                             font-weight: bold;
@@ -37,14 +61,21 @@
             }
             .right-section {
                 width: 50%;
-                .quest-section {
-                    .quest-item {
+                padding-left: 10%;
+                text-align: end;
+                .quests-section {
+                  padding: 24px;
+                  background-image: linear-gradient(to right, (rgba(12,12,12,0), rgb(244, 226, 200)));
+                  border-radius: 8px;
+                  color: $fontBlack;
+
+                  .quest-item {
                         .quest-title {
                             font-weight: bold;
                             margin: 8px 0;
                         }
                         .quest-desc {
-                            
+
                         }
                     }
                 }

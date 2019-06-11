@@ -12,7 +12,7 @@ import { QuestService } from 'src/app/services/quest.service';
 export class HomeComponent implements OnInit {
 
   public quests: Quest[];
-  public mainCharacter: Character;
+  public party: Character[];
 
   constructor(private _questService: QuestService, private _characterService: CharacterService) { }
 
@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
       this.quests = res;
     });
 
-    this._characterService.getMainCharacter().subscribe((res: Character) => {
-      this.mainCharacter = res;
+    this._characterService.getParty().subscribe((res: Character[]) => {
+      this.party = res;
     });
   }
 }

@@ -4,20 +4,18 @@
   <div class="sections">
     <div class="left-section">
       <h3>Party</h3>
-      <div class="main-character" *ngIf="mainCharacter">
-        <div class="image">
-          <img [src]="mainCharacter.img">
-        </div>
+      <div class="main-character" *ngFor="let char of party" [ngClass]="char.characterClass">
+        <div class="image" [ngStyle]="{'background-image': 'url(' + char.img + ')'}"></div>
         <div class="character-stats">
-          <div class="name">{{mainCharacter.name}}</div>
-          <div class="lvlNclass">Level {{mainCharacter.level}} {{mainCharacter.characterClass}}</div>
+          <div class="name">{{char.name}}</div>
+          <div class="lvlNclass">Level {{char.level}} {{char.characterClass}}</div>
         </div>
       </div>
     </div>
 
     <div class="right-section">
-      <div class="quests-section">
         <h3>Current quests</h3>
+      <div class="quests-section">
         <div class="quest-item" *ngFor="let quest of quests">
           <div class="quest-title">{{quest.title}}</div>
           <div class="quest-desc">
@@ -32,8 +30,6 @@
         <div class=nav-item>Raider's Den</div>
         <div class=nav-item>Untamed Forest</div>
         <div class=nav-item>Desolate Village</div>
-
-        <div class="divider"></div>
 
         <div class=nav-item>Blacksmith</div>
         <div class=nav-item>Shop</div>

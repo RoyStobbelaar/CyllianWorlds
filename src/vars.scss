@@ -2,7 +2,16 @@
 
 //Colors
 
+$fontWhite: #eee;
+$fontBlack: #111;
+
+$dark: #1d1d30;
+
 $primary: #3f3f56;
 $primaryDark: #2b2b40;
 $primaryLight: #6a6a8c;
 
+$gradientRogue: linear-gradient(to left, (rgba(12,12,12,0), rgba(200,160,220,1)));
+$gradientKnight: linear-gradient(to left, (rgba(12,12,12,0), rgba(180,180,150,1)));
+$gradientPriest: linear-gradient(to left, (rgba(12,12,12,0), rgba(230,230,230,1)));
+$gradientMage: linear-gradient(to left, (rgba(12,12,12,0), rgba(180,190,255,1)));
